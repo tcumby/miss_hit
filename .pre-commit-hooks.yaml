@@ -1,0 +1,14 @@
+-   id: mh-lint
+    name: lint MATLAB or Octave code
+    description: A simple linter for MATLAB or Octave code, including MATLAB embedded inside Simulink models.
+    entry: mh-lint
+    language: python
+    types: [ text ]
+    files: '\.m$'
+-   id: mh-style
+    name: Check coding style for MATLAB or Octave code
+    description: A simple coding style checker and code formatter for MATLAB or Octave code, including MATLAB embedded inside Simulink models.
+    entry: mh-style
+    language: python
+    types: [ text ]
+    files: '\.m$'
