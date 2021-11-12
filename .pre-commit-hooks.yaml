@@ -1,5 +1,12 @@
+-   id: mh-copyright
+    name: Maintain copyright notices in your MATLAB or Octave code
+    description: A simple coding style checker and code formatter for MATLAB or Octave code, including MATLAB embedded inside Simulink models.
+    entry: mh-copyright
+    language: python
+    types: [ text ]
+    files: '\.m$'
 -   id: mh-lint
-    name: lint MATLAB or Octave code
+    name: Lint MATLAB or Octave code
     description: A simple linter for MATLAB or Octave code, including MATLAB embedded inside Simulink models.
     entry: mh-lint
     language: python
