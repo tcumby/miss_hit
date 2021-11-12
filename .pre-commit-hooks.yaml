@@ -1,24 +1,34 @@
--   id: mh-copyright
+-   id: mh_copyright
     name: Maintain copyright notices in your MATLAB or Octave code
     description: A simple coding style checker and code formatter for MATLAB or Octave code, including MATLAB embedded inside Simulink models.
     entry: mh_copyright
     language: python
     types: [ text ]
-    files: \.m$
+    files: ^(.*\.(m|slx))$
     require_serial: true
--   id: mh-lint
+-   id: mh_lint
     name: Lint MATLAB or Octave code
     description: A simple linter for MATLAB or Octave code, including MATLAB embedded inside Simulink models.
     entry: mh_lint
     language: python
     types: [ text ]
-    files: \.m$
+    files: ^(.*\.(m|slx))$
     require_serial: true
--   id: mh-style
+-   id: mh_metric
+    name: Analyze code metrics for MATLAB code
+    description:  A simple code metric tool for MATLAB and Octave code that supports many common code metrics.
+    entry: mh_metric
+    args: [--ci]
+    language: python
+    types: [ text ]
+    files: ^(.*\.(m|slx))$
+    require_serial: false
+-   id: mh_style
     name: Check coding style for MATLAB or Octave code
     description: A simple coding style checker and code formatter for MATLAB or Octave code, including MATLAB embedded inside Simulink models.
     entry: mh_style
+    args: [--process-slx, --fix]
     language: python
     types: [ text ]
-    files: \.m$
-    require_serial: false
+    files: ^(.*\.(m|slx))$
+    require_serial: true
